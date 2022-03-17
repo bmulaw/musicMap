@@ -1,4 +1,0 @@
-BeautifulSoup
-requests
-pandas
-json
