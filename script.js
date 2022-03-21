@@ -15,7 +15,11 @@ const setMap = (center) => {
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: center,
+<<<<<<< HEAD
         zoom: 5
+=======
+        zoom: 4
+>>>>>>> 0969eaebf6a0f1a67bf948a31369d87349fa840d
     });
     getCityFromCoordinates(center)
 }
