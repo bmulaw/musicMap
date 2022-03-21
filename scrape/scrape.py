@@ -17,10 +17,10 @@ for city in cities:
     for people_array in data:
         for singer in people_array:
             singer = str(singer)
-            if ('singer' in singer or 'rapper' in singer or 'band' in singer) and "title=" in singer and ('">' in singer):
+            if ('singer' in singer or 'rapper' in singer or 'band' in singer) and ("title=" in singer and '">' in singer):
                 start = singer.index("title=") + 7
                 end = singer.index('">')
                 new_data.append(singer[start:end])
     artist_map[city] = new_data
             
-print(artist_map.keys())
+print(artist_map['Brooklyn'])

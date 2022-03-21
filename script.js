@@ -1,4 +1,4 @@
-const API_KEY = 'fakeAPIKey'
+const API_KEY = 'pk.eyJ1IjoiYm11bGF3IiwiYSI6ImNsMGVkYTZ0YjBodHMzY3A5cXhhaHh3aG8ifQ.TxEhw1kux8QR-icnS1ZA0Q'
 mapboxgl.accessToken = API_KEY
 
 const success = (position) => {
@@ -15,7 +15,7 @@ const setMap = (center) => {
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: center,
-        zoom: 12
+        zoom: 5
     });
     getCityFromCoordinates(center)
 }
